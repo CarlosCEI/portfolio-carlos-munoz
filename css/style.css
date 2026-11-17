@@ -1,0 +1,35 @@
+/* Paleta de colores definida para el portfolio. */
+:root {
+  --azul-noche: #101a2c;
+  --marfil: #f5f0e7;
+  --dorado: #c8a96b;
+  --gris-azulado: #a8b1bc;
+  --carbon: #13171a;
+  --blanco: #fffdf8;
+  --texto: #273246;
+  --linea: #d5dbe2;
+}
+
+/* Hace que los tamaños incluyan el espacio interior y los bordes. */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos generales de lectura y fondo. */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--texto);
+  background-color: var(--marfil);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Apariencia inicial de los enlaces. */
+a {
+  color: inherit;
+  text-decoration: none;
+}
