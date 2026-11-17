@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Portfolio de Carlos Muñoz Aceituno, desarrollador de software Full Stack e IA."
+  >
+  <title>Inicio | Carlos Muñoz Aceituno</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Cabecera común con la identidad y la navegación del portfolio. -->
+  <header class="cabecera">
+    <a class="marca" href="index.html" aria-label="Carlos Muñoz, página de inicio">
+      <span class="marca__monograma" aria-hidden="true">CMA</span>
+      <span class="marca__nombre">
+        <strong>Carlos Muñoz Aceituno</strong>
+        <small>DESPACHO DIGITAL</small>
+      </span>
+    </a>
+
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <a class="boton boton--principal" href="contacto.html">Hablemos</a>
+  </header>
+
+  <main>
+    <!-- Presentación principal. El monograma decorativo se construirá con CSS. -->
+    <section class="portada" aria-labelledby="titulo-principal">
+      <div class="portada__contenido">
+        <p class="sobretitulo">DESPACHO DIGITAL · INGENIERÍA DE SOFTWARE</p>
+        <p class="portada__firma">Carlos Muñoz Aceituno</p>
+
+        <h1 id="titulo-principal">
+          Desarrollador de software
+          <span>Full Stack &amp; IA</span>
+        </h1>
+
+        <p class="portada__descripcion">
+          Soy desarrollador de software proactivo y orientado a resultados,
+          con conocimientos en tecnologías orientadas a objetos, arquitecturas
+          web y soluciones cloud e inteligencia artificial. Me interesa seguir
+          aprendiendo y crear código eficiente y sostenible.
+        </p>
+
+        <div class="portada__acciones">
+          <a class="boton boton--principal" href="proyectos.html">
+            Ver proyectos
+          </a>
+          <a class="boton boton--secundario" href="sobre-mi.html">
+            Conocer mi perfil
+          </a>
+        </div>
+      </div>
+
+      <!-- Composición gráfica con texto y líneas; no utiliza imágenes. -->
+      <div class="portada__grafica" role="img" aria-label="Monograma CM decorativo">
+        <span class="portada__linea portada__linea--vertical" aria-hidden="true"></span>
+        <span class="portada__linea portada__linea--horizontal" aria-hidden="true"></span>
+        <span class="portada__monograma" aria-hidden="true">CMA</span>
+        <p class="portada__grafica-texto">SOFTWARE ENGINEERING</p>
+        <p class="portada__grafica-codigo">CMA — 01 / SYSTEMS</p>
+      </div>
+    </section>
+
+    <!-- Resumen de tecnologías agrupadas según el currículum. -->
+    <section class="especialidades" aria-labelledby="titulo-especialidades">
+      <div class="seccion__encabezado">
+        <div>
+          <p class="sobretitulo">CONOCIMIENTOS TÉCNICOS</p>
+          <h2 id="titulo-especialidades">Tecnologías y herramientas</h2>
+        </div>
+      </div>
+
+      <div class="especialidades__rejilla">
+        <article class="especialidad">
+          <h3>Lenguajes</h3>
+          <ul class="etiquetas">
+            <li>Java</li>
+            <li>C# / .NET</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+            <li>HTML5 / CSS3</li>
+          </ul>
+        </article>
+
+        <article class="especialidad">
+          <h3>Frameworks y backend</h3>
+          <ul class="etiquetas">
+            <li>FastAPI</li>
+            <li>Spring Boot</li>
+            <li>Angular</li>
+          </ul>
+        </article>
+
+        <article class="especialidad">
+          <h3>Bases de datos</h3>
+          <ul class="etiquetas">
+            <li>SQL / PLSQL</li>
+            <li>MongoDB</li>
+            <li>XQuery</li>
+          </ul>
+        </article>
+
+        <article class="especialidad">
+          <h3>Cloud y herramientas</h3>
+          <ul class="etiquetas">
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>Unity Hub</li>
+            <li>Linux</li>
+            <li>Windows</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Resumen de experiencia profesional; el detalle irá en Sobre mí. -->
+    <section class="experiencia-resumen" aria-labelledby="titulo-experiencia">
+      <div class="experiencia-resumen__encabezado">
+        <p class="sobretitulo">TRAYECTORIA · EXPERIENCIA PRÁCTICA</p>
+        <h2 id="titulo-experiencia">Ingeniería aplicada a sistemas reales</h2>
+      </div>
+
+      <article class="experiencia-resumen__tarjeta">
+        <p class="experiencia-resumen__periodo">MARZO — JUNIO DE 2026</p>
+        <h3>Desarrollador de Software en prácticas</h3>
+        <p class="experiencia-resumen__empresa">SepsaMedha</p>
+        <p>
+          Participé en el desarrollo y optimización de software de
+          videovigilancia y seguridad con C# y .NET. También realicé pruebas
+          funcionales, depuración de código e integración y validación de
+          componentes de hardware.
+        </p>
+        <a class="enlace" href="sobre-mi.html">
+          Conocer mi trayectoria <span aria-hidden="true">→</span>
+        </a>
+      </article>
+    </section>
+
+    <!-- Resumen de formación académica con las fechas del currículum. -->
+    <section class="formacion-resumen" aria-labelledby="titulo-formacion">
+      <div class="seccion__encabezado">
+        <div>
+          <p class="sobretitulo">FORMACIÓN</p>
+          <h2 id="titulo-formacion">Aprendizaje y evolución técnica</h2>
+        </div>
+        <a class="enlace" href="sobre-mi.html">
+          Ver formación completa <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="formacion-resumen__rejilla">
+        <article class="formacion-resumen__item">
+          <p class="formacion-resumen__periodo">OCTUBRE DE 2026 — ACTUALIDAD</p>
+          <h3>Máster en IA &amp; Full Stack Development</h3>
+          <p>CEI · Centro de Estudios de Innovación, Madrid</p>
+        </article>
+
+        <article class="formacion-resumen__item">
+          <p class="formacion-resumen__periodo">2023 — 2026</p>
+          <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+          <p>IES Luis Vives, Leganés</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Espacios reservados para proyectos reales; no se inventan ejemplos. -->
+    <section class="proyectos-resumen" aria-labelledby="titulo-proyectos">
+      <div class="seccion__encabezado">
+        <div>
+          <p class="sobretitulo">SELECCIÓN DE PROYECTOS</p>
+          <h2 id="titulo-proyectos">Proyectos y sistemas</h2>
+        </div>
+        <a class="enlace" href="proyectos.html">
+          Ver todos los proyectos <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="proyectos-resumen__rejilla">
+        <article class="tarjeta-proyecto">
+          <p class="tarjeta-proyecto__numero">ARCH // 01</p>
+          <p class="tarjeta-proyecto__categoria">PROYECTO PENDIENTE</p>
+          <h3>[AÑADIR PROYECTO REAL]</h3>
+          <p>
+            Espacio reservado para describir un proyecto real cuando lo
+            incorporemos al portfolio.
+          </p>
+          <a href="proyectos.html">Ver proyectos</a>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <p class="tarjeta-proyecto__numero">ARCH // 02</p>
+          <p class="tarjeta-proyecto__categoria">PROYECTO PENDIENTE</p>
+          <h3>[AÑADIR PROYECTO REAL]</h3>
+          <p>
+            Espacio reservado para describir un proyecto real cuando lo
+            incorporemos al portfolio.
+          </p>
+          <a href="proyectos.html">Ver proyectos</a>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <p class="tarjeta-proyecto__numero">ARCH // 03</p>
+          <p class="tarjeta-proyecto__categoria">PROYECTO PENDIENTE</p>
+          <h3>[AÑADIR PROYECTO REAL]</h3>
+          <p>
+            Espacio reservado para describir un proyecto real cuando lo
+            incorporemos al portfolio.
+          </p>
+          <a href="proyectos.html">Ver proyectos</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Llamada final a la página de contacto. -->
+    <section class="llamada-contacto" aria-labelledby="titulo-contacto">
+      <div>
+        <p class="sobretitulo">DESPACHO DIGITAL · CARLOS MUÑOZ</p>
+        <h2 id="titulo-contacto">Hablemos de tecnología y nuevas ideas</h2>
+      </div>
+      <a class="boton boton--principal" href="contacto.html">Hablemos</a>
+    </section>
+  </main>
+
+  <!-- Pie de página con navegación y correo de contacto. -->
+  <footer class="pie">
+    <a class="marca" href="index.html" aria-label="Carlos Muñoz, volver al inicio">
+      <span class="marca__monograma" aria-hidden="true">CMA</span>
+      <span class="marca__nombre">
+        <strong>Carlos Muñoz Aceituno</strong>
+        <small>DESPACHO DIGITAL</small>
+      </span>
+    </a>
+
+    <nav class="pie__navegacion" aria-label="Navegación del pie de página">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <a class="pie__correo" href="mailto:camunozac@gmail.com">
+      camunozac@gmail.com
+    </a>
+
+    <p class="pie__credito">Portfolio personal · Carlos Muñoz Aceituno</p>
+  </footer>
+</body>
+</html>
