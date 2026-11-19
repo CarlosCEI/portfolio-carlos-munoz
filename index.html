@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Cabecera común con la identidad y la navegación del portfolio. -->
+  <!-- Cabecera principal y navegación del portfolio. -->
   <header class="cabecera">
-    <a class="marca" href="index.html" aria-label="Carlos Muñoz, página de inicio">
+    <a class="marca" href="index.html" aria-label="Carlos Muñoz Aceituno, página de inicio">
       <span class="marca-monograma" aria-hidden="true">CMA</span>
       <span class="marca-nombre">
         <strong>Carlos Muñoz Aceituno</strong>
-        <small>DESPACHO DIGITAL</small>
+        <small>Despacho digital</small>
       </span>
     </a>
 
@@ -29,230 +29,337 @@
     </nav>
 
     <a class="boton boton-principal" href="contacto.html">Hablemos</a>
+
+    <!-- Icono decorativo del perfil; se representará con CSS. -->
+    <a class="perfil-enlace" href="sobre-mi.html" aria-label="Ver mi perfil">
+      <span class="perfil-icono" aria-hidden="true"></span>
+    </a>
   </header>
 
   <main>
-    <!-- Presentación principal. El monograma decorativo se construirá con CSS. -->
+    <!-- Presentación principal y panel de identidad profesional. -->
     <section class="portada" aria-labelledby="titulo-principal">
       <div class="portada-contenido">
-        <p class="sobretitulo">DESPACHO DIGITAL · INGENIERÍA DE SOFTWARE</p>
+        <p class="sobretitulo">Despacho digital · Ingeniería de software</p>
         <p class="portada-firma">Carlos Muñoz Aceituno</p>
 
         <h1 id="titulo-principal">
           Desarrollador de software
-          <span>Full Stack &amp; IA</span>
+          <span>Full Stack e IA</span>
         </h1>
 
         <p class="portada-descripcion">
-          Soy desarrollador de software proactivo y orientado a resultados,
-          con conocimientos en tecnologías orientadas a objetos, arquitecturas
-          web y soluciones cloud e inteligencia artificial. Me interesa seguir
-          aprendiendo y crear código eficiente y sostenible.
+          Creo soluciones de software eficientes y sostenibles. Combino
+          desarrollo, aprendizaje continuo y una mirada práctica para resolver
+          problemas.
         </p>
 
         <div class="portada-acciones">
           <a class="boton boton-principal" href="proyectos.html">
-            Ver proyectos
+            Ver proyectos <span aria-hidden="true">→</span>
           </a>
           <a class="boton boton-secundario" href="sobre-mi.html">
             Conocer mi perfil
           </a>
         </div>
+
+        <ul class="portada-valores" aria-label="Principios profesionales">
+          <li>Rigor técnico</li>
+          <li>Arquitectura limpia</li>
+          <li>Inteligencia aplicada</li>
+        </ul>
       </div>
 
-      <!-- Composición gráfica con texto y líneas; no utiliza imágenes. -->
-      <div class="portada-grafica" role="img" aria-label="Monograma CM decorativo">
-        <span class="portada-linea portada-linea-vertical" aria-hidden="true"></span>
-        <span class="portada-linea portada-linea-horizontal" aria-hidden="true"></span>
-        <span class="portada-monograma" aria-hidden="true">CMA</span>
-        <p class="portada-grafica-texto">SOFTWARE ENGINEERING</p>
-        <p class="portada-grafica-codigo">CMA — 01 / SYSTEMS</p>
-      </div>
+      <aside
+        class="panel-identidad"
+        aria-label="Monograma CMA y nombre de Carlos Muñoz Aceituno"
+      >
+        <div class="panel-identidad-encabezado">
+          <p>Atelier // CMA-01</p>
+          <p>SYS.READY // 2025</p>
+        </div>
+
+        <div class="panel-identidad-grafica">
+          <span class="panel-identidad-monograma" aria-hidden="true">CMA</span>
+          <p class="panel-identidad-nombre">Carlos Muñoz Aceituno</p>
+          <p class="panel-identidad-profesion">Software engineering</p>
+        </div>
+
+        <div class="panel-identidad-datos">
+          <div>
+            <h2>Especialidad</h2>
+            <p>Full Stack · .NET</p>
+          </div>
+          <div>
+            <h2>Orientación</h2>
+            <p>IA &amp; Optimización</p>
+          </div>
+        </div>
+
+        <div class="panel-identidad-ubicacion">
+          <p>LOC: Madrid / Remoto</p>
+          <p>COD: 40.4168° N, 3.7038° W</p>
+        </div>
+      </aside>
     </section>
 
-    <!-- Resumen de tecnologías agrupadas según el currículum. -->
+    <!-- Resumen de las áreas técnicas principales. -->
     <section class="especialidades" aria-labelledby="titulo-especialidades">
+      <div class="especialidades-intro">
+        <p class="sobretitulo">Especialidades técnicas</p>
+        <h2 id="titulo-especialidades">Pila tecnológica prioritaria</h2>
+      </div>
+
+      <ul class="especialidades-lista">
+        <li class="especialidad">
+          <h3>C# / .NET</h3>
+          <p>Backend &amp; Core</p>
+        </li>
+        <li class="especialidad">
+          <h3>JavaScript</h3>
+          <p>Web &amp; React Ecosystem</p>
+        </li>
+        <li class="especialidad">
+          <h3>Python</h3>
+          <p>Scripting &amp; Data</p>
+        </li>
+        <li class="especialidad">
+          <h3>Cloud</h3>
+          <p>Arquitectura &amp; Operaciones</p>
+        </li>
+        <li class="especialidad">
+          <h3>IA</h3>
+          <p>Modelos &amp; Inferencia</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Experiencia profesional en SepsaMedha. -->
+    <section class="experiencia-resumen" aria-labelledby="titulo-experiencia">
       <div class="seccion-encabezado">
         <div>
-          <p class="sobretitulo">CONOCIMIENTOS TÉCNICOS</p>
-          <h2 id="titulo-especialidades">Tecnologías y herramientas</h2>
+          <p class="sobretitulo">Trayectoria &amp; validez profesional</p>
+          <h2 id="titulo-experiencia">Experiencia práctica</h2>
         </div>
-      </div>
-
-      <div class="especialidades-rejilla">
-        <article class="especialidad">
-          <h3>Lenguajes</h3>
-          <ul class="etiquetas">
-            <li>Java</li>
-            <li>C# / .NET</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>Kotlin</li>
-            <li>HTML5 / CSS3</li>
-          </ul>
-        </article>
-
-        <article class="especialidad">
-          <h3>Frameworks y backend</h3>
-          <ul class="etiquetas">
-            <li>FastAPI</li>
-            <li>Spring Boot</li>
-            <li>Angular</li>
-          </ul>
-        </article>
-
-        <article class="especialidad">
-          <h3>Bases de datos</h3>
-          <ul class="etiquetas">
-            <li>SQL / PLSQL</li>
-            <li>MongoDB</li>
-            <li>XQuery</li>
-          </ul>
-        </article>
-
-        <article class="especialidad">
-          <h3>Cloud y herramientas</h3>
-          <ul class="etiquetas">
-            <li>AWS</li>
-            <li>Docker</li>
-            <li>Unity Hub</li>
-            <li>Linux</li>
-            <li>Windows</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- Resumen de experiencia profesional; el detalle irá en Sobre mí. -->
-    <section class="experiencia-resumen" aria-labelledby="titulo-experiencia">
-      <div class="experiencia-resumen-encabezado">
-        <p class="sobretitulo">TRAYECTORIA · EXPERIENCIA PRÁCTICA</p>
-        <h2 id="titulo-experiencia">Ingeniería aplicada a sistemas reales</h2>
-      </div>
-
-      <article class="experiencia-resumen-tarjeta">
-        <p class="experiencia-resumen-periodo">MARZO — JUNIO DE 2026</p>
-        <h3>Desarrollador de Software en prácticas</h3>
-        <p class="experiencia-resumen-empresa">SepsaMedha</p>
-        <p>
-          Participé en el desarrollo y optimización de software de
-          videovigilancia y seguridad con C# y .NET. También realicé pruebas
-          funcionales, depuración de código e integración y validación de
-          componentes de hardware.
+        <p class="seccion-descripcion">
+          Aplicación de ingeniería real en entornos de alta exigencia,
+          seguridad perimetral y estabilidad operativa continuada.
         </p>
-        <a class="enlace" href="sobre-mi.html">
-          Conocer mi trayectoria <span aria-hidden="true">→</span>
-        </a>
+      </div>
+
+      <article class="experiencia-tarjeta">
+        <div class="experiencia-empresa">
+          <p class="sobretitulo">Prácticas de ingeniería</p>
+          <h3>SepsaMedha</h3>
+          <p class="experiencia-sector">
+            Sistemas ferroviarios &amp; seguridad tecnológica
+          </p>
+
+          <ul class="experiencia-contexto">
+            <li>Entorno de software crítico para transporte y seguridad</li>
+            <li>Integración estricta software-hardware industrial</li>
+          </ul>
+        </div>
+
+        <div class="experiencia-detalle">
+          <div class="experiencia-descripcion">
+            <h3>Desarrollo de software de videovigilancia y seguridad</h3>
+            <p>
+              Desarrollo y optimización de software de videovigilancia y
+              seguridad con tecnologías C#/.NET. Realización de tareas de
+              validación directa de hardware especializado y ejecución
+              rigurosa de pruebas funcionales para asegurar la máxima
+              resiliencia del sistema operativo.
+            </p>
+          </div>
+
+          <div class="experiencia-areas">
+            <article class="experiencia-area">
+              <h4>Núcleo C# / .NET</h4>
+              <p>
+                Refactorización e implementación de rutinas seguras para
+                transmisión de vídeo.
+              </p>
+            </article>
+
+            <article class="experiencia-area">
+              <h4>Validación de hardware</h4>
+              <p>
+                Testeo exhaustivo en bancos de prueba de cámaras y
+                controladores industriales.
+              </p>
+            </article>
+
+            <article class="experiencia-area">
+              <h4>Pruebas funcionales</h4>
+              <p>
+                Protocolos metódicos de verificación frente a pérdidas de
+                conexión y estrés crítico.
+              </p>
+            </article>
+          </div>
+
+          <div class="experiencia-pie">
+            <p>Enfoque metódico · Soluciones comprobadas</p>
+            <a href="sobre-mi.html">
+              Ver trayectoria completa en Sobre mí
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
       </article>
     </section>
 
-    <!-- Resumen de formación académica con las fechas del currículum. -->
-    <section class="formacion-resumen" aria-labelledby="titulo-formacion">
-      <div class="seccion-encabezado">
-        <div>
-          <p class="sobretitulo">FORMACIÓN</p>
-          <h2 id="titulo-formacion">Aprendizaje y evolución técnica</h2>
-        </div>
-        <a class="enlace" href="sobre-mi.html">
-          Ver formación completa <span aria-hidden="true">→</span>
-        </a>
-      </div>
-
-      <div class="formacion-resumen-rejilla">
-        <article class="formacion-resumen-item">
-          <p class="formacion-resumen-periodo">OCTUBRE DE 2026 — ACTUALIDAD</p>
-          <h3>Máster en IA &amp; Full Stack Development</h3>
-          <p>CEI · Centro de Estudios de Innovación, Madrid</p>
-        </article>
-
-        <article class="formacion-resumen-item">
-          <p class="formacion-resumen-periodo">2023 — 2026</p>
-          <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
-          <p>IES Luis Vives, Leganés</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Espacios reservados para proyectos reales; no se inventan ejemplos. -->
+    <!-- Catálogo de proyectos personales y académicos. -->
     <section class="proyectos-resumen" aria-labelledby="titulo-proyectos">
       <div class="seccion-encabezado">
         <div>
-          <p class="sobretitulo">SELECCIÓN DE PROYECTOS</p>
-          <h2 id="titulo-proyectos">Proyectos y sistemas</h2>
+          <p class="sobretitulo">Atelier de ingeniería // Registro de sistemas</p>
+          <h2 id="titulo-proyectos">Proyectos en desarrollo y portafolio</h2>
         </div>
-        <a class="enlace" href="proyectos.html">
-          Ver todos los proyectos <span aria-hidden="true">→</span>
+        <p class="seccion-descripcion">
+          Estructura de catalogación de obras de software. Espacios de trabajo
+          arquitectónicos preparados para documentación de código e
+          implementaciones en curso.
+        </p>
+      </div>
+
+      <div class="proyectos-lista">
+        <article class="tarjeta-proyecto">
+          <div class="tarjeta-proyecto-encabezado">
+            <p>ARCH // 01</p>
+            <p class="proyecto-estado">En desarrollo</p>
+          </div>
+
+          <div class="proyecto-imagen-pendiente">
+            <span class="proyecto-icono" aria-hidden="true">◇</span>
+            <p>[Añadir proyecto real]</p>
+            <p>Espacio para captura / blueprint</p>
+          </div>
+
+          <div class="tarjeta-proyecto-contenido">
+            <p class="proyecto-categoria">Categoría pendiente</p>
+            <h3>[Añadir proyecto real]</h3>
+            <p>
+              Espacio reservado para la documentación de implementación,
+              decisiones de diseño de software, alcance arquitectónico y
+              metodología aplicada.
+            </p>
+
+            <ul class="proyecto-tecnologias" aria-label="Tecnologías del proyecto">
+              <li>Tecnología 1</li>
+              <li>Tecnología 2</li>
+              <li>Tecnología 3</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="tarjeta-proyecto-encabezado">
+            <p>ARCH // 02</p>
+            <p class="proyecto-estado">En desarrollo</p>
+          </div>
+
+          <div class="proyecto-imagen-pendiente">
+            <span class="proyecto-icono" aria-hidden="true">◇</span>
+            <p>[Añadir proyecto real]</p>
+            <p>Espacio para captura / blueprint</p>
+          </div>
+
+          <div class="tarjeta-proyecto-contenido">
+            <p class="proyecto-categoria">Categoría pendiente</p>
+            <h3>[Añadir proyecto real]</h3>
+            <p>
+              Espacio reservado para la documentación de implementación,
+              decisiones de diseño de software, alcance arquitectónico y
+              metodología aplicada.
+            </p>
+
+            <ul class="proyecto-tecnologias" aria-label="Tecnologías del proyecto">
+              <li>Tecnología 1</li>
+              <li>Tecnología 2</li>
+              <li>Tecnología 3</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="tarjeta-proyecto-encabezado">
+            <p>ARCH // 03</p>
+            <p class="proyecto-estado">En desarrollo</p>
+          </div>
+
+          <div class="proyecto-imagen-pendiente">
+            <span class="proyecto-icono" aria-hidden="true">◇</span>
+            <p>[Añadir proyecto real]</p>
+            <p>Espacio para captura / blueprint</p>
+          </div>
+
+          <div class="tarjeta-proyecto-contenido">
+            <p class="proyecto-categoria">Categoría pendiente</p>
+            <h3>[Añadir proyecto real]</h3>
+            <p>
+              Espacio reservado para la documentación de implementación,
+              decisiones de diseño de software, alcance arquitectónico y
+              metodología aplicada.
+            </p>
+
+            <ul class="proyecto-tecnologias" aria-label="Tecnologías del proyecto">
+              <li>Tecnología 1</li>
+              <li>Tecnología 2</li>
+              <li>Tecnología 3</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="proyectos-pie">
+        <p>Estructura de catálogo transparente · Cero simulaciones</p>
+        <a class="boton boton-secundario" href="proyectos.html">
+          Explorar todos los proyectos <span aria-hidden="true">→</span>
         </a>
       </div>
-
-      <div class="proyectos-resumen-rejilla">
-        <article class="tarjeta-proyecto">
-          <p class="tarjeta-proyecto-numero">ARCH // 01</p>
-          <p class="tarjeta-proyecto-categoria">PROYECTO PENDIENTE</p>
-          <h3>[AÑADIR PROYECTO REAL]</h3>
-          <p>
-            Espacio reservado para describir un proyecto real cuando lo
-            incorporemos al portfolio.
-          </p>
-          <a href="proyectos.html">Ver proyectos</a>
-        </article>
-
-        <article class="tarjeta-proyecto">
-          <p class="tarjeta-proyecto-numero">ARCH // 02</p>
-          <p class="tarjeta-proyecto-categoria">PROYECTO PENDIENTE</p>
-          <h3>[AÑADIR PROYECTO REAL]</h3>
-          <p>
-            Espacio reservado para describir un proyecto real cuando lo
-            incorporemos al portfolio.
-          </p>
-          <a href="proyectos.html">Ver proyectos</a>
-        </article>
-
-        <article class="tarjeta-proyecto">
-          <p class="tarjeta-proyecto-numero">ARCH // 03</p>
-          <p class="tarjeta-proyecto-categoria">PROYECTO PENDIENTE</p>
-          <h3>[AÑADIR PROYECTO REAL]</h3>
-          <p>
-            Espacio reservado para describir un proyecto real cuando lo
-            incorporemos al portfolio.
-          </p>
-          <a href="proyectos.html">Ver proyectos</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- Llamada final a la página de contacto. -->
-    <section class="llamada-contacto" aria-labelledby="titulo-contacto">
-      <div>
-        <p class="sobretitulo">DESPACHO DIGITAL · CARLOS MUÑOZ ACEITUNO</p>
-        <h2 id="titulo-contacto">Hablemos de tecnología y nuevas ideas</h2>
-      </div>
-      <a class="boton boton-principal" href="contacto.html">Hablemos</a>
     </section>
   </main>
 
-  <!-- Pie de página con navegación y correo de contacto. -->
+  <!-- Pie de página con identidad, navegación y datos de contacto. -->
   <footer class="pie">
-    <a class="marca" href="index.html" aria-label="Carlos Muñoz, volver al inicio">
-      <span class="marca-monograma" aria-hidden="true">CMA</span>
-      <span class="marca-nombre">
-        <strong>Carlos Muñoz Aceituno</strong>
-        <small>DESPACHO DIGITAL</small>
-      </span>
-    </a>
+    <div class="pie-identidad">
+      <a class="pie-nombre" href="index.html">Carlos Muñoz Aceituno</a>
+      <p class="pie-especialidad">
+        Despacho digital &amp; architectural engineering
+      </p>
+      <p>
+        Práctica de ingeniería de software Full Stack e inteligencia artificial.
+        Rigor formal, artesanía algorítmica y sobriedad tecnológica.
+      </p>
+    </div>
 
     <nav class="pie-navegacion" aria-label="Navegación del pie de página">
+      <h2>Navegación</h2>
       <a href="index.html">Inicio</a>
       <a href="sobre-mi.html">Sobre mí</a>
-      <a href="proyectos.html">Proyectos</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="proyectos.html">Proyectos &amp; Sistemas</a>
+      <a href="contacto.html">Contacto &amp; Consultoría</a>
     </nav>
 
-    <a class="pie-correo" href="mailto:camunozac@gmail.com">
-      camunozac@gmail.com
-    </a>
+    <div class="pie-contacto">
+      <h2>Despacho directo</h2>
+      <a href="mailto:camunozac@gmail.com">camunozac@gmail.com</a>
+      <p>Madrid — Remoto internacional</p>
 
-    <p class="pie-credito">Portfolio personal · Carlos Muñoz Aceituno</p>
+      <!-- Añadir los enlaces definitivos cuando estén confirmados. -->
+      <div class="pie-enlaces-pendientes">
+        <span>LinkedIn Perfil</span>
+        <span aria-hidden="true">/</span>
+        <span>Agenda Privada</span>
+      </div>
+    </div>
+
+    <div class="pie-legal">
+      <p>© 2025 Carlos Muñoz Aceituno — Despacho digital. Todos los derechos reservados.</p>
+      <p>Precisión técnica &amp; elegancia formal</p>
+    </div>
   </footer>
 </body>
 </html>
