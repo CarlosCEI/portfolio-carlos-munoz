@@ -1,4 +1,4 @@
-/* Paleta de colores definida para el portfolio. */
+/* Colores del portfolio. */
 :root {
   --azul-noche: #101a2c;
   --marfil: #f5f0e7;
@@ -10,16 +10,12 @@
   --linea: #d5dbe2;
 }
 
-/* Hace que los tamaños incluyan el espacio interior y los bordes. */
+/* El tamaño incluye el relleno y los bordes. */
 * {
   box-sizing: border-box;
 }
 
-/* Estilos generales de lectura y fondo. */
-html {
-  scroll-behavior: smooth;
-}
-
+/* Estilos generales de la página. */
 body {
   margin: 0;
   color: var(--texto);
@@ -28,8 +24,134 @@ body {
   line-height: 1.6;
 }
 
-/* Apariencia inicial de los enlaces. */
+/* Estilo general de los enlaces. */
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/* Cabecera compartida. */
+.cabecera {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 5%;
+  color: var(--blanco);
+  background-color: var(--azul-noche);
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  gap: 12px;
+  color: inherit;
+}
+
+.marca-monograma {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--dorado);
+  color: var(--dorado);
+}
+
+.marca-nombre {
+  display: flex;
+  flex-direction: column;
+}
+
+.marca-nombre small {
+  color: var(--dorado);
+  text-transform: uppercase;
+}
+
+.navegacion {
+  display: flex;
+  justify-self: center;
+  gap: 24px;
+}
+
+.navegacion a {
+  color: var(--gris-azulado);
+}
+
+.navegacion a{
+  color: var(--dorado);
+}
+
+.boton {
+  padding: 12px 20px;
+}
+
+.boton-principal {
+  justify-self: end;
+  color: var(--azul-noche);
+  background-color: var(--dorado);
+}
+
+/* Pie de página compartido. */
+.pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 40px 5% 20px;
+  color: var(--blanco);
+  background-color: var(--carbon);
+}
+
+.pie-identidad,
+.pie-navegacion,
+.pie-contacto {
+  flex: 1;
+}
+
+.pie-navegacion {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pie-navegacion h2,
+.pie-contacto h2 {
+  color: var(--dorado);
+  text-transform: uppercase;
+}
+
+.pie-navegacion a {
+  color: var(--gris-azulado);
+}
+
+.pie-contacto a,
+.pie-correo,
+.pie-especialidad {
+  color: var(--dorado);
+}
+
+.pie-especialidad {
+  text-transform: uppercase;
+}
+
+.pie-legal,
+.pie-credito {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--gris-azulado);
+  color: var(--gris-azulado);
+}
+
+.pie-legal p {
+  margin: 0;
+}
+
+.pie-legal p:last-child {
+  color: var(--dorado);
+  text-transform: uppercase;
 }
